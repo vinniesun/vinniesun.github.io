@@ -59,11 +59,89 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="memory_efficient_stop()" onmouseover="memory_efficient_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='memory_efficient_image'><img src='images/memory_efficient_after.png' style="object-fit: contain; width: 100%; height: 100%;"></div>
+                  <img src='images/memory_efficient_before.png' style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <script type="text/javascript">
+                  function memory_efficient_start() {
+                    document.getElementById('memory_efficient_image').style.opacity = "1";
+                  }
+
+                  function memory_efficient_stop() {
+                    document.getElementById('memory_efficient_image').style.opacity = "0";
+                  }
+                  memory_efficient_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10445937">
+                  <span class="papertitle">Memory Efficient Corner Detection for Event-Driven Dynamic Vision Sensors</span>
+                </a>
+                <br>
+                <strong>Pao-Sheng Vincent Sun</strong>, Arren Glover, Chiara Bartolozzi, <a href="https://scholar.google.com/citations?user=Ton5pYMAAAAJ">Arindam Basu</a>
+                <br>
+                <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2024
+                <br>
+                <!-- <a href="https://github.com/neurobench">GitHub</a> -->
+                <!-- / -->
+                <!-- <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a> -->
+                <!-- / -->
+                <a href="https://ieeexplore.ieee.org/abstract/document/10445937">Paper</a>
+                <a href="data/sun2024memory.bib">bibtex</a>
+                <p></p>
+                <p>
+                  Designing corner detection pipeline for Dynamic Vision Sensors (DVS) for memory efficiency.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="ipu_stop()" onmouseover="ipu_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ipu_image'><img src='images/ipu_after.png' style="object-fit: contain; width: 100%; height: 100%;"></div>
+                  <img src='images/ipu_before.png' style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <script type="text/javascript">
+                  function ipu_start() {
+                    document.getElementById('ipu_image').style.opacity = "1";
+                  }
+
+                  function ipu_stop() {
+                    document.getElementById('ipu_image').style.opacity = "0";
+                  }
+                  ipu_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://iopscience.iop.org/article/10.1088/2634-4386/ad2373/meta">
+                  <span class="papertitle">Exploiting deep learning accelerators for neuromorphic workloads</span>
+                </a>
+                <br>
+                <strong>Pao-Sheng Vincent Sun</strong>, Alexander Titterton, Anjlee Gopiani, Tim Santos, <a href="https://scholar.google.com/citations?user=Ton5pYMAAAAJ">Arindam Basu</a>, Wei D Lu, Jason K Eshraghian
+                <br>
+                <em>IOP Neuromorphic Computing and Engineering</em>, 2024
+                <br>
+                <!-- <a href="https://github.com/neurobench">GitHub</a> -->
+                <!-- / -->
+                <!-- <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a> -->
+                <!-- / -->
+                <a href="https://iopscience.iop.org/article/10.1088/2634-4386/ad2373/meta">Paper</a>
+                <a href="data/sun2024exploiting.bib">bibtex</a>
+                <p></p>
+                <p>
+                  Utilising the full power of Graphcore's IPU for efficient Neuromorphic workload.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="memLED_stop()" onmouseover="memLED_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='memLED_image'><img src='images/memLED_before.png' style="object-fit: contain; width: 100%; height: 100%;"></div>
-                  <img src='images/memLED_after.png' style="object-fit: contain; width: 100%; height: 100%;">
+                  <div class="two" id='memLED_image'><img src='images/memLED_after.png' style="object-fit: contain; width: 100%; height: 100%;"></div>
+                  <img src='images/memLED_before.png' style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
                 <script type="text/javascript">
                   function memLED_start() {
@@ -81,7 +159,7 @@
                   <span class="papertitle">Ion-Mediated Recombination Dynamics in Perovskite-Based Memory Light-Emitting Diodes for Neuromorphic Control Systems</span>
                 </a>
                 <br>
-                Natalia Yantara, Si En Ng, Divyam Sharma, Biyan Zhou, <strong>Pao-Sheng Vincent Sun</strong>, Huei Min Chua, Nur Fadilah Jamaludin, Arindam Basu, Nripan Mathews
+                Natalia Yantara, Si En Ng, Divyam Sharma, Biyan Zhou, <strong>Pao-Sheng Vincent Sun</strong>, Huei Min Chua, Nur Fadilah Jamaludin, <a href="https://scholar.google.com/citations?user=Ton5pYMAAAAJ">Arindam Basu</a>, Nripan Mathews
                 <br>
                 <em>Advanced Materials</em>, 2024
                 <br>
@@ -101,8 +179,8 @@
             <tr onmouseout="ann_vs_snn_stop()" onmouseover="ann_vs_snn_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='ann_vs_snn_image'><img src='images/ann_vs_snn_before.png' style="object-fit: contain; width: 100%; height: 100%;"></div>
-                  <img src='images/ann_vs_snn_after.png' style="object-fit: contain; width: 100%; height: 100%;">
+                  <div class="two" id='ann_vs_snn_image'><img src='images/ann_vs_snn_after.png' style="object-fit: contain; width: 100%; height: 100%;"></div>
+                  <img src='images/ann_vs_snn_before.png' style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
                 <script type="text/javascript">
                   function ann_vs_snn_start() {
@@ -120,7 +198,7 @@
                   <span class="papertitle">ANN vs SNN: A case study for Neural Decoding in Implantable Brain-Machine Interfaces</span>
                 </a>
                 <br>
-                Biyan Zhou, <strong>Pao-Sheng Vincent Sun</strong>, Arindam Basu
+                Biyan Zhou, <strong>Pao-Sheng Vincent Sun</strong>, <a href="https://scholar.google.com/citations?user=Ton5pYMAAAAJ">Arindam Basu</a>
                 <br>
                 <em>arXiv</em>, 2023
                 <br>
@@ -159,7 +237,7 @@
                   <span class="papertitle">Neurobench: Advancing neuromorphic computing through collaborative, fair and representative benchmarking</span>
                 </a>
                 <br>
-                Jason Yik, Soikat Hasan Ahmed, Zergham Ahmed, Brian Anderson, Andreas G Andreou, Chiara Bartolozzi, Arindam Basu, Douwe den Blanken, Petrut Bogdan, Sonia Buckley, Sander Bohte, Younes Bouhadjar, Gert Cauwenberghs, Federico Corradi, Guido de Croon, Andreea Danielescu, Anurag Daram, Mike Davies, Yigit Demirag, Jason K Eshraghian, Jeremy Forest, Steve Furber, Michael Furlong, Aditya Gilra, Giacomo Indiveri, Siddarth Joshi, Vedant Karia, Lyes Khacef, James C Knight, Laura Kriener, Rajkumar Kubendran, Dhireesha Kudithipudi, Gregor Lenz, Rajit Manohar, Christian Mayr, Konstantinos Michmizos, Dylan Muir, Emre Neftci, Thomas Nowotny, Fabrizio Ottati, Ayca Ozcelikkale, Noah Pacik-Nelson, Priyadarshini Panda, <strong>Sun Pao-Sheng</strong>, Melika Payvand, Christian-Gernot Pehle, Mihai Alexandru Petrovici, Cristoph Posch, Yulia Sandamirskaya, Clemens Schaefer, Andre van Schaik, Johannes Schemmel, Catherine Schuman, Jae-sun Seo, Sumit Bam Shrestha, Manolis Sifalakis, Amos Sironi, Kenneth Stewart, Terrence Stewart, Philipp Stratmann, Guangzhi Tang, Jonathan Timcheck, Marian Verhelst, Craig Vineyard, Bernard Vogginger, Amirreza Yousefzadeh, Biyan Zhou, Fatima Tuz Zohora, Charlotte Frenkel, Vijay Janapa Reddy
+                Jason Yik, Soikat Hasan Ahmed, Zergham Ahmed, Brian Anderson, Andreas G Andreou, Chiara Bartolozzi, <a href="https://scholar.google.com/citations?user=Ton5pYMAAAAJ">Arindam Basu</a>, Douwe den Blanken, Petrut Bogdan, Sonia Buckley, Sander Bohte, Younes Bouhadjar, Gert Cauwenberghs, Federico Corradi, Guido de Croon, Andreea Danielescu, Anurag Daram, Mike Davies, Yigit Demirag, Jason K Eshraghian, Jeremy Forest, Steve Furber, Michael Furlong, Aditya Gilra, Giacomo Indiveri, Siddarth Joshi, Vedant Karia, Lyes Khacef, James C Knight, Laura Kriener, Rajkumar Kubendran, Dhireesha Kudithipudi, Gregor Lenz, Rajit Manohar, Christian Mayr, Konstantinos Michmizos, Dylan Muir, Emre Neftci, Thomas Nowotny, Fabrizio Ottati, Ayca Ozcelikkale, Noah Pacik-Nelson, Priyadarshini Panda, <strong>Sun Pao-Sheng</strong>, Melika Payvand, Christian-Gernot Pehle, Mihai Alexandru Petrovici, Cristoph Posch, Yulia Sandamirskaya, Clemens Schaefer, Andre van Schaik, Johannes Schemmel, Catherine Schuman, Jae-sun Seo, Sumit Bam Shrestha, Manolis Sifalakis, Amos Sironi, Kenneth Stewart, Terrence Stewart, Philipp Stratmann, Guangzhi Tang, Jonathan Timcheck, Marian Verhelst, Craig Vineyard, Bernard Vogginger, Amirreza Yousefzadeh, Biyan Zhou, Fatima Tuz Zohora, Charlotte Frenkel, Vijay Janapa Reddy
                 <br>
                 <em>NIST</em>, 2023
                 <br>
