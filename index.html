@@ -59,6 +59,45 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="ann_vs_snn_stop()" onmouseover="ann_vs_snn_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ann_vs_snn_image'><img src='images/ann_vs_snn_before.png'></div>
+                  <img src='images/ann_vs_snn_after.png'>
+                </div>
+                <script type="text/javascript">
+                  function ann_vs_snn_start() {
+                    document.getElementById('ann_vs_snn_image').style.opacity = "1";
+                  }
+
+                  function ann_vs_snn_stop() {
+                    document.getElementById('ann_vs_snn_image').style.opacity = "0";
+                  }
+                  ann_vs_snn_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2312.15889">
+                  <span class="papertitle">ANN vs SNN: A case study for Neural Decoding in Implantable Brain-Machine Interfaces</span>
+                </a>
+                <br>
+                Biyan Zhou, <strong>Pao-Sheng Vincent Sun</strong>, Arindam Basu
+                <br>
+                <em>arXiv</em>, 2023
+                <br>
+                <!-- <a href="https://github.com/neurobench">GitHub</a> -->
+                <!-- / -->
+                <!-- <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a> -->
+                <!-- / -->
+                <a href="https://arxiv.org/pdf/2312.15889">arXiv</a>
+                <a href="data/zhou2023ann.bib">bibtex</a>
+                <p></p>
+                <p>
+                  A case study for decoding recorded neural data of two monkeys with Artificial Neural Network vs Spiking Neural Networks.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="neurobench_whitepaper_stop()" onmouseover="neurobench_whitepaper_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
